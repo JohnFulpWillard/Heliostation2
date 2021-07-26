@@ -1848,8 +1848,6 @@
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
 "ake" = (
-/obj/structure/closet/l3closet/security,
-/obj/effect/turf_decal/bot_red,
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
@@ -2492,12 +2490,8 @@
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "amg" = (
-/obj/machinery/power/apc{
-	areastring = "/area/security/brig/upper";
-	dir = 1;
-	name = "Brig Lockers APC";
-	pixel_y = 23
-	},
+/obj/effect/landmark/secequipment,
+/obj/effect/turf_decal/bot_red,
 /obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
@@ -2505,12 +2499,14 @@
 /obj/effect/landmark/secequipment,
 /obj/effect/turf_decal/bot_red,
 /obj/machinery/airalarm/directional/north,
+/obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "ami" = (
 /obj/effect/landmark/secequipment,
 /obj/effect/turf_decal/bot_red,
 /obj/structure/extinguisher_cabinet/directional/north,
+/obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "amj" = (
@@ -2584,6 +2580,7 @@
 /obj/effect/landmark/secequipment,
 /obj/effect/turf_decal/bot_red,
 /obj/machinery/light/directional/north,
+/obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "amx" = (
@@ -3074,7 +3071,14 @@
 /turf/open/floor/vault,
 /area/command/bridge)
 "aoa" = (
-/obj/machinery/vending/security,
+/obj/machinery/camera{
+	c_tag = "Brig - Gear Room";
+	dir = 1;
+	name = "Security Camera";
+	network = list("ss13","security")
+	},
+/obj/effect/landmark/secequipment,
+/obj/effect/turf_decal/bot_red,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "aob" = (
@@ -3305,19 +3309,14 @@
 /turf/open/floor/plating,
 /area/maintenance/department/security/upper)
 "aoP" = (
-/obj/structure/table,
-/obj/item/toy/plush/batong,
+/obj/machinery/vending/security,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "aoR" = (
 /obj/effect/landmark/secequipment,
 /obj/effect/turf_decal/bot_red,
-/obj/machinery/camera{
-	c_tag = "Brig - Gear Room";
-	dir = 1;
-	name = "Security Camera";
-	network = list("ss13","security")
-	},
+/obj/machinery/power/apc/auto_name/east,
+/obj/structure/cable,
 /turf/open/floor/iron/showroomfloor,
 /area/security/brig)
 "aoS" = (
@@ -4193,6 +4192,7 @@
 "arZ" = (
 /obj/vehicle/ridden/secway,
 /obj/effect/turf_decal/bot_red,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "asa" = (
@@ -4535,15 +4535,10 @@
 /turf/open/floor/iron,
 /area/security/brig)
 "atj" = (
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/security/armory";
-	dir = 1;
-	name = "Armoury APC";
-	pixel_y = 23
-	},
-/obj/structure/cable,
-/turf/open/floor/iron/dark,
-/area/ai_monitored/security/armory)
+/obj/structure/closet/l3closet/security,
+/obj/effect/turf_decal/bot_red,
+/turf/open/floor/iron/showroomfloor,
+/area/security/brig)
 "atk" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/emergency,
@@ -4749,6 +4744,8 @@
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/mask/gas/sechailer,
+/obj/machinery/power/apc/auto_name/north,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "aum" = (
@@ -5286,7 +5283,12 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "awE" = (
-/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "awH" = (
@@ -41637,6 +41639,7 @@
 /obj/item/gun/energy/ionrifle,
 /obj/item/gun/energy/temperature/security,
 /obj/item/clothing/suit/hooded/ablative,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "gsR" = (
@@ -43423,6 +43426,7 @@
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/clothing/glasses/hud/security/sunglasses,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "nBG" = (
@@ -44419,6 +44423,7 @@
 /obj/item/clothing/ears/earmuffs,
 /obj/item/clothing/ears/earmuffs,
 /obj/item/clothing/ears/earmuffs,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "rYR" = (
@@ -44977,10 +44982,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"uGx" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron/dark,
-/area/ai_monitored/security/armory)
 "uJd" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
@@ -72296,7 +72297,7 @@ aju
 aju
 aju
 ajR
-aob
+atj
 any
 aoM
 aoS
@@ -73583,9 +73584,9 @@ aju
 ami
 aob
 aob
-aoR
+aks
 aoS
-uGx
+wZO
 aqz
 arP
 asP
@@ -73842,10 +73843,10 @@ aob
 aob
 aoq
 aoS
-atj
+wZO
+wZO
+wZO
 awE
-awE
-asX
 wZO
 wZO
 awN
@@ -74094,7 +74095,7 @@ aju
 ajP
 alF
 aju
-aks
+aoR
 ald
 anW
 aks
